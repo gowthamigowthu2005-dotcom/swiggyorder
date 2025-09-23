@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy Clone</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: orange;
+    }
+header img {
+      height: 70px;
+      border-radius: 8px;
+    }
+
+    header .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+    }
+
+    /* HERO */
+    #hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      background: #f8d07a;
+    }
+
+    #hero div {
+      max-width: 50%;
+    }
+
+    #hero img {
+      max-width: 40%;
+      border-radius: 10px;
+    }
+
+    /* DISHES */
+    #dishes {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .dish-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      
+    }
+
+    .dish {
+      flex: 1 1 200px;
+      max-width: 250px;
+      background: #afb1b1;
+      padding: 15px;
+      border-radius: 10px ;
+    margin-left: 17px;
+      text-align: center;
+    }
+
+    .dish img {
+      
+      width:180px;
+        height: 190px;
+        border-radius: 20px;
+   position: relative;
+   display: flex;
+   margin-top: 10px;
+    
+  border:3px solid black;
+
+  
+
+    }
+
+    /* FOOTER */
+    footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      background: black;
+      color: white;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* ============================= */
+    /* MOBILE VIEW (300px - 766px) */
+    /* ============================= */
+    @media (max-width: 766px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      #hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      #hero div {
+        max-width: 100%;
+      }
+
+      #hero img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+
+      .dish-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .dish {
+        width: 90%;
+        max-width: 320px;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+ <header>
+  <img src="swi.webp" alt="Logo">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+
+  <!-- HERO -->
+  <section id="hero">
+    <div>
+      <h1>Delicious Food, Delivered Fast</h1>
+      <p>Order your favorite meals and get them delivered right to your doorstep in minutes.</p>
+      <button>Order Now</button>
+    </div>
+    <img src="food.jpg" alt="Food Image">
+  </section>
+
+  <!-- POPULAR DISHES -->
+  <section id="dishes">
+    <h2>Popular Dishes</h2>
+    <div class="dish-container">
+      <div class="dish">
+        <img src="burger.webp" alt="Burger">
+        <h3>Burger</h3>
+        <p>₹100</p>
+      </div>
+      <div class="dish">
+        <img src="pizza.jpg" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>₹150</p>
+      </div>
+      <div class="dish">
+        <img src="biriyani.jpg" alt="Biryani">
+        <h3>Biryani</h3>
+        <p>₹200</p>
+      </div>
+      <div class="dish">
+        <img src="chicken.jpg" alt="Chicken Curry">
+        <h3>Chicken Curry</h3>
+        <p>₹120</p>
+      </div>
+       <div class="dish">
+      <img src="pasta.jpg" alt="pasta ">
+      <h3>Pasta</h3>
+      <p>₹100</p>
+    </div>
+     <div class="dish">
+      <img src="meals.jpg" alt=" meals">
+      <h3> Meals</h3>
+      <p>₹80</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <section>
+      <h4>About Us</h4>
+      <p>We deliver delicious food at doorstep</p>
+    </section>
+    <section>
+      <h4>Contact</h4>
+      <p>Email: swiggy@gmail.com</p>
+    </section>
+    <section>
+      <h4>Follow Us</h4>
+      <p>Instagram: @swiggy</p>
+    </section>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
